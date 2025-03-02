@@ -15,7 +15,7 @@ h1, h2 {
     animation: fadeInDown 1s ease-in-out;
 }
 
-/* Smooth fade-in effect */
+
 @keyframes fadeInDown {
     from {
         opacity: 0;

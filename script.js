@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // List of available audio files (you need to manually add the filenames here)
     const audioFiles = [
         "audio/day1.mp3",
-        "audio/day2.mp3",
-        "audio/day3.mp3",
         // Add more files as you upload them
     ];
 

@@ -1,43 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noor Al-Quran Audio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 
-    <header>
-        <h1>🌙 Noor Al-Quran Audio</h1>
-        <p>Listen to the Quran with Translations</p>
-    </header>
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    <!-- Today's Audio Section -->
-    <section id="todays-audio">
-        <h2>📢 Today's Audio</h2>
-        <div class="audio-container">
-            <audio controls>
-                <source src="audios/todays-audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </section>
+h1, h2 {
+    margin: 10px 0;
+}
 
-    <!-- Archive Section -->
-    <section id="archive">
-        <h2>📂 Audio Archive</h2>
-        <ul>
-            <li><a href="audios/audio1.mp3">Audio 1</a></li>
-            <li><a href="audios/audio2.mp3">Audio 2</a></li>
-            <li><a href="audios/audio3.mp3">Audio 3</a></li>
-        </ul>
-    </section>
+#todays-audio, #archive {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Noor Al-Quran | All Rights Reserved</p>
-    </footer>
+#todays-audio {
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+}
 
-</body>
-</html>
+audio {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    background: #eee;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

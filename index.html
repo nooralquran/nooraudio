@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quran Translation Audio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-grid img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        audio {
+            margin-top: 10px;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Quran Translation Audio</h1>
-    <p>Audio translations will be available here.</p>
+    <header>
+        <h1>Quran Translation Audio</h1>
+        <p>Listen to daily Quran translations with ease.</p>
+    </header>
+    
+    <section id="daily-audio">
+        <h2>Today's Audio</h2>
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="audio/day1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <section id="audio-archive">
+        <h2>Audio Archive</h2>
+        <ul id="audio-list"></ul>
+    </section>
+    
+    <section id="gallery">
+        <h2>Islamic Gallery</h2>
+        <div class="image-grid">
+            <img src="https://source.unsplash.com/400x300/?mosque" alt="Mosque">
+            <img src="https://source.unsplash.com/400x300/?quran" alt="Quran">
+            <img src="https://source.unsplash.com/400x300/?islamic" alt="Islamic Art">
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
 

@@ -3,64 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quran Translation Audio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .image-grid {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        .image-grid img {
-            width: 30%;
-            border-radius: 10px;
-        }
-        audio {
-            margin-top: 10px;
-            width: 80%;
-        }
-    </style>
+    <title>Noor Al-Quran Audio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Quran Translation Audio</h1>
-        <p>Listen to daily Quran translations with ease.</p>
+        <h1>🌙 Noor Al-Quran Audio</h1>
+        <p>Listen to the Quran with Translations</p>
     </header>
-    
-    <section id="daily-audio">
-        <h2>Today's Audio</h2>
-        <audio id="audio-player" controls>
-            <source id="audio-source" src="audio/day1.mp3" type="audio/mp3">
+
+    <!-- Today's Audio Section -->
+    <section id="todays-audio">
+        <h2>📢 Today's Audio</h2>
+        <audio controls>
+            <source src="audios/todays-audio.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </section>
-    
-    <section id="audio-archive">
-        <h2>Audio Archive</h2>
-        <ul id="audio-list"></ul>
+
+    <!-- Archive Section -->
+    <section id="archive">
+        <h2>📂 Audio Archive</h2>
+        <ul>
+            <li><a href="audios/audio1.mp3">Audio 1</a></li>
+            <li><a href="audios/audio2.mp3">Audio 2</a></li>
+            <li><a href="audios/audio3.mp3">Audio 3</a></li>
+        </ul>
     </section>
-    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Noor Al-Quran | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
-
-
